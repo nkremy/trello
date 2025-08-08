@@ -1,0 +1,13 @@
+:root{
+    --bg-navbar:rgb(16, 34, 34);
+    --border-color-mode-dark:cyan;
+    --text-color:gray;
+}
+
+.container{
+    padding: 10px;
+    background: var(--bg-navbar);
+    color: var(--text-color);
+    min-width: 100vw;
+    min-height: calc(100vh - 60px);
+}

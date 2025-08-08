@@ -1,0 +1,70 @@
+:root{
+    --bg-tabletask:rgb(17, 1, 1);
+    --bg-navbar:#102222;
+    --border-color-mode-dark:cyan;
+    --text-color:rgb(255, 255, 255);
+}
+
+
+.table{
+     width: 250px;
+    /* padding: 5px; */
+    background: var( --bg-tabletask);
+    border: 1px solid var(--border-color-mode-dark) ;
+    border-radius: 10px;
+    color: white;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    .title{
+        min-width: 100%;
+        min-height: 40px;
+        max-height: 50px;
+        border-bottom:1px solid  var(--border-color-mode-dark);
+        text-align: center;
+        font-size: 1.5em;
+         align-content: center;
+         background-color: gray;
+    } 
+
+    .options{
+        min-height: 30px; 
+        max-height: 30px;
+        /* padding: 5px; */
+        width: 100%;
+        padding: 5px 0px;
+
+    }
+
+    .btn-create-task{
+        background-color: grey;
+        width: 90%;
+        margin: auto;
+        /* position: relative; */
+        /* top: 5px; */
+        padding:5px ;
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+
+    .btn-create-task:hover{
+        background-color: rgb(165, 165, 165);
+    }
+
+    .items{
+        min-height: 40px;
+        padding: 0px 5px;
+    }
+}
+
+.item{
+    height: 30px;
+    padding: 5px;
+    margin: 2px 0px;
+    background: grey;
+    /* width: 96%; */
+    border-radius: 5px;
+}
