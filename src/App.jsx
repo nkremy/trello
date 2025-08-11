@@ -5,6 +5,7 @@ import { BarreRechercher } from './component/BarreRecherche'
 import './style.css';
 import { TableTask } from './element/TableTask';
 import { FormTache } from './component/FormTache';
+import { DetailsTask } from './component/DetailsTask';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <TableTask title={'sdsd'} />
         <FormTache></FormTache>
       </div>
+      <DetailsTask></DetailsTask>
     </>
   )
 }

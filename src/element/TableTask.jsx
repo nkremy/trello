@@ -5,10 +5,12 @@ import { CenterExpanded } from '../component/CenterExpanded';
 import { FormTache } from '../component/FormTache';
 
 class Tache{
-    nom;
+     nom;
+     priorite;
     date = new Date();
-    constructor(nom){
+    constructor(nom,priorite){
         this.nom = nom;
+        this.priorite = priorite;
     }
 
     getDate(){
@@ -23,8 +25,8 @@ export function TableTask({title}){
 
     let [visible,setVisible] = useState(false);
     let[taches,setTaches]=useState([new Tache("talla"),new Tache("talla")]);
-    let ajouterTache = (nomTache)=>{
-        setTaches([...taches,new Tache(nomTache)]);
+    let ajouterTache = (nomTache,priorite)=>{
+        setTaches([...taches,new Tache(nomTache,priorite)]);
         console.log(taches);
     }
 

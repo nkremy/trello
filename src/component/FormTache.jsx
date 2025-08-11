@@ -2,9 +2,10 @@ import { useState } from "react";
 
 export function FormTache({tache,setTache,setVisible,ajouterTache}){
     let [nom,setNom] = useState('');
+    let [priorite,setPriorite] = useState(1);
     function ajouter(){
         if(nom.trim().length != 0 ){
-            ajouterTache(nom);
+            ajouterTache(nom,priorite);
             setVisible(false);
         }else{
             console.log(nom.trim)
@@ -22,10 +23,10 @@ export function FormTache({tache,setTache,setVisible,ajouterTache}){
             </tr>
             <tr align="center">
                 <td colSpan={"2"}>
-                    <select name="" id="">
-                        <option>simple</option>
-                        <option>moyen</option>
-                        <option>important</option>
+                    <select name="" id="" value={priorite} onChange={(e)=>{setPriorite(e.target.value)}}>
+                        <option value={1}>simple</option>
+                        <option value={2}>moyen</option>
+                        <option value={3}>important</option>
                     </select>
                 </td>
             </tr>
